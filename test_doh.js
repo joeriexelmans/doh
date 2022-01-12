@@ -2,7 +2,7 @@
 
 // Should work in browser but only tested with NodeJS v14.16.1
 
-const { Context, History } = require("./History.js");
+const { Context, History } = require("./doh.js");
 
 // From: https://stackoverflow.com/a/43260158
 // returns all the permutations of a given array
