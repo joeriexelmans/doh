@@ -1,6 +1,7 @@
 
 # Dependency-aware Operation History
 ... or **Doh** for short (pronounced "dough" or "D'OH!" - see illustration below) is a **distributed, operation-based, dependency-aware version control system (VCS)**.
+
 ![D'oh!](homer.jpg)
 
 ## Goals
