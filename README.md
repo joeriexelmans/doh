@@ -42,7 +42,7 @@ The easiest way (for me) to explain Doh, is to compare it with Git. Back when I 
 |How are versions created?|Manually with the "commit" command. (Works with any editor that can save its state to a file.)|Manually with the "commit" command. (Works with any editor that can save its state to a file.)|Automatically, for every edit operation. (Therefore requires non-trivial editor integration.)|
 |What is recorded with every version?|A snapshot of a filesystem hierarchy|A set of edit operations on files (insert hunk, delete hunk, ...) and directories (add, rename/move, delete, ...).|A set of key → value assignments|
 |How are versions linked?|"parent" relation: the immediate previous version(s) in logical time|"dependencies": non-concurrent, non-commutating changes|"dependencies": the ancestor version(s) that are at least partially overwritten|
-|HEAD points to a|Single version|Set of independent, non-conflicting operations (= set of versions)|
-|What's the result of a merge?|A new version, with as parents the merged versions|An update to HEAD, being the union of the merged HEADs
-|Conflict resolution|Manually specify what the merged version must look like|Destructive: manually or randomly pick an operation to be excluded from HEAD. (The excluded operation becomes an abandoned branch.)|
-|Version IDs|Content-addressed (SHA-1)|GUIDs (I want to change this to content-addressed at some point)
+|HEAD points to a|Single version|Set of independent, non-conflicting operations (= set of versions)|Set of independent, non-conflicting operations (= set of versions)|
+|What's the result of a merge?|A new version, with as parents the merged versions|?|An update to HEAD, being the union of the merged HEADs
+|Conflict resolution|Manually specify what the merged version must look like|?|Destructive: manually or randomly pick an operation to be excluded from HEAD. (The excluded operation becomes an abandoned branch.)|
+|Version IDs|Content-addressed (SHA-1)|?|GUIDs (I want to change this to content-addressed at some point)
